@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rolldice/style.dart';
 
 class GradientMix extends StatelessWidget {
   const GradientMix({super.key});
@@ -18,15 +19,7 @@ class GradientMix extends StatelessWidget {
         transform: GradientRotation(23),
         end: Alignment.topRight,
       )),
-      child: const Center(
-        child: Text(
-          'euclidstellar',
-          style: TextStyle(
-            color: Color.fromARGB(230, 0, 0, 0),
-            fontSize: 28,
-          ),
-        ),
-      ),
+      child:const StyleText()
     );
   }
 }
