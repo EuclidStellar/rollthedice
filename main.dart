@@ -1,13 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:rolldice/Gradient.dart';
+// import 'package:flutter/material.dart';
+// import 'package:rolldice/Gradient.dart';
 
-void main() {
-  runApp( const MaterialApp(
-    home: Scaffold(
-      body: GradientMix()
-    ),
-  ));
-}
+// void main() {
+//   runApp( const MaterialApp(
+//     home: Scaffold(
+//       body: GradientMix()
+//     ),
+//   ));
+// }
 
 // import 'package:flutter/material.dart';
 
@@ -55,3 +55,28 @@ void main() {
 //     );
 //   }
 // }
+
+
+
+
+
+
+//-------------------------------re usable widget -------------------------------//
+
+
+
+
+import 'package:flutter/material.dart';
+import 'package:rolldice/Gradient.dart';
+
+void main() {
+  runApp( const MaterialApp(
+    home: Scaffold(
+      body: GradientMix(
+
+            Color.fromARGB(233, 255, 255, 255),
+            Color.fromARGB(225, 119, 234, 74),
+      )
+    ),
+  ));
+}
