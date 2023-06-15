@@ -90,15 +90,15 @@ class GradientMix extends StatelessWidget {
       )),
       child: Center(
         child: Column(
-            // child take single widget
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              //children take multiple widget
-              Image.asset(
-                'assets/dice-2.png',
-                width: 200,
-              ),
-             const SizedBox(height: 20),
+          // child take single widget
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            //children take multiple widget
+            Image.asset(
+              'assets/dice-2.png',
+              width: 200,
+            ),
+            const SizedBox(height: 20),
             TextButton(
               onPressed: rolldice,
               style: TextButton.styleFrom(
@@ -107,6 +107,7 @@ class GradientMix extends StatelessWidget {
                 // ),
                 foregroundColor: const Color.fromARGB(255, 29, 28, 28),
                 textStyle: const TextStyle(
+                  fontStyle: FontStyle.italic,
                   fontSize: 28,
                 ),
               ),
