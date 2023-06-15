@@ -77,6 +77,7 @@ class GradientMix extends StatelessWidget {
   final Color color2;
 
   @override
+  
   Widget build(context) {
     return Container(
         decoration: BoxDecoration(
