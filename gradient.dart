@@ -33,8 +33,38 @@
 
 // -----------------------------Re-Usable Widget--------------------------------//
 
+// import 'package:flutter/material.dart';
+// import 'package:rolldice/style.dart';
+
+// const startkidharse = Alignment.bottomLeft;
+// const endkidharkarnahai = Alignment.topRight;
+// const transformkidharse = GradientRotation(23);
+
+// class GradientMix extends StatelessWidget {
+//   const GradientMix(this.color1, this.color2, {super.key});
+
+//   final Color color1;
+//   final Color color2;
+
+//   @override
+//   Widget build(context) {
+//     return Container(
+//         decoration:  BoxDecoration(
+//             gradient: LinearGradient(
+//             colors: [color1,color2],
+
+//           begin: startkidharse,
+//           transform: transformkidharse,
+//           end: endkidharkarnahai,
+//         )),
+//         child: const StyleText('euclid stellar'));
+//   }
+// }
+
+// -----------------------creating dice roller ---------------------------------//
+
 import 'package:flutter/material.dart';
-import 'package:rolldice/style.dart';
+//import 'package:rolldice/style.dart';
 
 const startkidharse = Alignment.bottomLeft;
 const endkidharkarnahai = Alignment.topRight;
@@ -49,14 +79,18 @@ class GradientMix extends StatelessWidget {
   @override
   Widget build(context) {
     return Container(
-        decoration:  BoxDecoration(
+        decoration: BoxDecoration(
             gradient: LinearGradient(
-            colors: [color1,color2],
-
+          colors: [color1, color2],
           begin: startkidharse,
           transform: transformkidharse,
           end: endkidharkarnahai,
         )),
-        child: const StyleText('euclid stellar'));
+        child: Center(
+          child: Image.asset(
+            'assets/dice-1.png',
+            width: 200,
+          ),
+        ));
   }
 }
