@@ -14,7 +14,6 @@ class DiceRoll extends StatefulWidget {
 }
 
 class _DiceRollState extends State<DiceRoll> {
-
   var currentDiceRoll = 2;
 
   void rolldice() {
@@ -22,7 +21,6 @@ class _DiceRollState extends State<DiceRoll> {
       currentDiceRoll = randomizer.nextInt(6) + 1;
     });
   }
-
 
   @override
   Widget build(context) {
@@ -32,7 +30,7 @@ class _DiceRollState extends State<DiceRoll> {
       children: [
         //children take multiple widget
         Image.asset(
-          'assets/dice-2.png',
+          'assets/dice-$currentDiceRoll.png',
           width: 200,
         ),
         const SizedBox(height: 20),
