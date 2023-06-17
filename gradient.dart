@@ -64,6 +64,7 @@
 // -----------------------creating dice roller ---------------------------------//
 
 import 'package:flutter/material.dart';
+import 'package:rolldice/dice_roll.dart';
 //import 'package:rolldice/style.dart';
 
 const startkidharse = Alignment.bottomLeft;
@@ -88,33 +89,8 @@ class GradientMix extends StatelessWidget {
         transform: transformkidharse,
         end: endkidharkarnahai,
       )),
-      child: Center(
-        child: Column(
-          // child take single widget
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            //children take multiple widget
-            Image.asset(
-              'assets/dice-2.png',
-              width: 200,
-            ),
-            const SizedBox(height: 20),
-            TextButton(
-              onPressed: rolldice,
-              style: TextButton.styleFrom(
-                // padding: const EdgeInsets.only(
-                //   top: 20,
-                // ),
-                foregroundColor: const Color.fromARGB(255, 29, 28, 28),
-                textStyle: const TextStyle(
-                  fontStyle: FontStyle.italic,
-                  fontSize: 28,
-                ),
-              ),
-              child: const Text('Roll Dice'),
-            )
-          ],
-        ),
+      child: const Center(
+        child: DiceRoll()
       ),
     );
   }
